@@ -1,0 +1,111 @@
+$baseFontSize: 75px; //基数
+@function px2rem($px) {
+  @return $px / $baseFontSize * 1rem;
+}
+
+@mixin ui-flex {
+  display: flex;
+}
+
+@mixin flex-cell {
+  flex: 1;
+}
+
+@mixin bg-white {
+  background: #fff;
+}
+
+@mixin triangle {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@mixin border-1px($way,$color) {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    #{$way}: 0;
+    left: 0;
+    border-top: 1px solid $color;
+    width: 100%;
+    @media screen and(-webkit-min-device-pixel-ratio: 1.5) {
+      transform: scaleY(0.7);
+    }
+    @media screen and(-webkit-min-device-pixel-ratio: 2) {
+      transform: scaleY(0.5);
+      transform-origin: 0 0;
+    }
+    @media screen and(-webkit-min-device-pixel-ratio: 3) {
+      transform: scaleY(0.333);
+      transform-origin: 0 0;
+    }
+  }
+}
+@mixin btn-h36 {
+  display: inline-block;
+  padding:px2rem(6px) px2rem(10px);
+  text-align: center;
+  font-size: px2rem(18px);
+  border-radius: px2rem(8px);
+}
+@mixin btn-h48 {
+  display: inline-block;
+  height: px2rem(48px);
+  line-height: px2rem(42px);
+  padding:0 px2rem(12px);
+  text-align: center;
+  font-size: px2rem(24px);
+  border-radius: px2rem(5px);
+  white-space: nowrap;
+}
+@mixin btn-h75 {
+  display: block;
+  height: px2rem(75px);
+  line-height: px2rem(75px);
+  text-align: center;
+  font-size: px2rem(32px);
+  border-radius: px2rem(8px);
+}
+@mixin btn-h50 {
+  display: inline-block;
+  padding:0 px2rem(12px);
+  height: px2rem(50px);
+  line-height: px2rem(50px);
+  text-align: center;
+  font-size: px2rem(26px);
+  border-radius: px2rem(5px);
+}
+
+@mixin btn-h64 {
+  display: inline-block;
+  width: px2rem(205px);
+  height: px2rem(64px);
+  line-height: px2rem(64px);
+  text-align: center;
+  font-size: px2rem(32px);
+  border-radius: px2rem(30px);
+}
+@mixin btn-h68 {
+  display: inline-block;
+  padding:0 px2rem(12px);
+  height: px2rem(68px);
+  line-height: px2rem(68px);
+  text-align: center;
+  font-size: px2rem(24px);
+  border-radius: px2rem(8px);
+}
+@mixin btn-h80 {
+  display: inline-block;
+  width: px2rem(320px);
+  height: px2rem(80px);
+  line-height: px2rem(80px);
+  text-align: center;
+  font-size: px2rem(28px);
+  border-radius: px2rem(8px);
+}
+

@@ -1,0 +1,41 @@
+/*
+@import "var";
+@import "mixin";
+.footer-menu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  @include ui-flex;
+  align-items: center;
+  height: 97px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  li {
+    @include flex-cell;
+    text-align: center;
+    a {
+      color: $light-blue;
+      .menu-icon {
+        width: 56px;
+        height: 56px;
+        line-height: 56px;
+        font-size: 38px;
+      }
+    }
+    &.active {
+      a {
+        .menu-icon {
+          color: #fff;
+          font-size: 36px;
+          background: $blue;
+          border-radius: 100%;
+        }
+        .menu-text {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+*/

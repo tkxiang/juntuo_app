@@ -1,0 +1,110 @@
+@import "var";
+@import "mixin";
+.com-btn-wrapper{
+  padding: px2rem(25px) px2rem(30px);
+  @include bg-white;
+  box-shadow: 0px px2rem(-4px) px2rem(10px) #e4eef7;
+}
+.add-btn{
+  .icon-add{
+    font-size: px2rem(28px);
+    margin-right: px2rem(10px);
+  }
+}
+.fixed-btn-wrapper{
+  position: fixed;
+  left: 0;
+  bottom:0;
+  width: 100%;
+  z-index: 1000;
+}
+.btn-wrapper-none{
+  background: none;
+  box-shadow: none;
+}
+.com-btn-group-bottom{
+  text-align: center;
+  a{
+    padding: 0 px2rem(90px);
+    display: inline-block;
+    margin-right: px2rem(20px);
+    box-sizing: border-box;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+.layui-m-layer{
+  .com-btn-wrapper{
+    box-shadow: none;
+  }
+}
+.blue-btn-h75{
+  @include btn-h75;
+  color: #fff;
+  background: $blue;
+}
+.blue-btn-h50{
+  @include btn-h50;
+  color: #fff;
+  background: $blue;
+}
+.blue-btn-h64{
+  @include btn-h64;
+  color: #fff;
+  background: $blue;
+}
+.blue-btn-h80{
+  @include btn-h80;
+  color: #fff;
+  background: $blue;
+}
+.blue-border-btn-36{
+  @include btn-h36;
+  color: $blue;
+  border: 1px solid $blue;
+  background: #fff;
+}
+.blue-border-btn-48{
+  @include btn-h48;
+  color: $blue;
+  border: 1px solid $blue;
+  background: #fff;
+}
+.blue-border-btn-h75{
+  @include btn-h75;
+  color: $blue;
+  border: 1px solid $blue;
+  background: #fff;
+}
+.blue-border-btn-h80{
+  @include btn-h80;
+  color: $blue;
+  border: 1px solid $blue;
+  background: #fff;
+}
+.blue-border-btn-h68{
+  @include btn-h68;
+  color: $blue;
+  border: 1px solid $blue;
+  background: #fff;
+}
+.gray-border-btn-h75{
+  @include btn-h75;
+  color: $blue;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+.layer-btn-group{
+  font-size: 0;
+  a{
+    padding:0 px2rem(90px);
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: px2rem(25px);
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+}

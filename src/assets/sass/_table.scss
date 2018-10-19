@@ -1,0 +1,26 @@
+@import "var";
+@import "mixin";
+
+
+.table {
+  width: 100%;
+  font-size: px2rem(24px);
+  tr{
+    border-bottom: 1px solid $border-color;
+  }
+  th {
+    padding: px2rem(20px);
+    color: $light-blue;
+    background: #fcfafa;
+    text-align: center;
+  }
+  td {
+    padding: px2rem(30px) px2rem(20px);
+    color: $text-color;
+    text-align: center;
+    .title-name{
+      color:$text-light-color;
+      padding-right: px2rem(20px);
+    }
+  }
+}
